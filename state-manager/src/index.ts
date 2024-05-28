@@ -1,1 +1,3 @@
-export { default as StateManager } from "./state-manager";
+import StateManager from "./state-manager";
+export default StateManager;
+export * from "./types";

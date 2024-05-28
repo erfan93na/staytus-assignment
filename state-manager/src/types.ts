@@ -4,7 +4,7 @@ export type State = Record<string, unknown>;
 export type Listener<S extends State> = (updatedState: S) => void;
 
 export type Middleware<S extends State> = (
-  stateManager: StateManager<S, Listener<S>, Middleware<S>>,
+  stateManager: StateManager<S>,
   next: (action: Action<S>) => void
 ) => (action: Action<S>) => void;
 
