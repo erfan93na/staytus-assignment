@@ -1,16 +1,16 @@
 {
-  "name": "state-manager",
+  "name": "@packages/starwars-utilities",
   "version": "1.0.0",
-  "description": "Simple state-manager written in TypeScript",
+  "description": "Utility functions to use StarWars api",
   "source": "src/index.ts",
   "main": "dist/main.js",
   "module": "dist/module.js",
+  "types": "dist/types.d.ts",
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build",
     "test": "jest"
   },
-  "types": "dist/types.d.ts",
   "author": "erfan naghashlou",
   "license": "ISC",
   "devDependencies": {
@@ -22,5 +22,8 @@
     "ts-jest": "^29.1.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@packages/state-manager": "^1.0.0"
   }
 }

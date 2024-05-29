@@ -5,7 +5,7 @@ import StateManager, {
   Middleware,
   UpdateAction,
   ResetAction,
-} from "./";
+} from ".";
 
 interface TestState extends StateType {
   count: number;

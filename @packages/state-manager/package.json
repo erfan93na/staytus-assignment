@@ -1,7 +1,7 @@
 {
-  "name": "fetch-planets",
+  "name": "@packages/state-manager",
   "version": "1.0.0",
-  "description": "Utility functions to use StarWars api",
+  "description": "Simple state-manager written in TypeScript",
   "source": "src/index.ts",
   "main": "dist/main.js",
   "module": "dist/module.js",
@@ -10,6 +10,7 @@
     "build": "parcel build",
     "test": "jest"
   },
+  "types": "dist/types.d.ts",
   "author": "erfan naghashlou",
   "license": "ISC",
   "devDependencies": {

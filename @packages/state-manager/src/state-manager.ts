@@ -88,5 +88,4 @@ class StateManager<State extends StateType> {
     }
   }
 }
-
 export default StateManager;

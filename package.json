@@ -1,0 +1,15 @@
+{
+  "name": "statytus-task",
+  "private": true,
+  "workspaces": [
+    "@packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build:state-manager && npm run build:starwars-utilities",
+    "build:state-manager": "cd @packages/state-manager && npm run build",
+    "build:starwars-utilities": "cd @packages/starwars-utilities && npm run build"
+  },
+  "dependencies": {
+    "@packages/starwars-utilities": "^1.0.0"
+  }
+}
