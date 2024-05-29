@@ -1,4 +1,5 @@
-import { PaginatedResponse } from './paginated-response';
+import { Film } from "./film";
+import { PaginatedResponse } from "./paginated-response";
 export interface Planet {
   name: string;
   rotation_period: string;
@@ -15,5 +16,7 @@ export interface Planet {
   edited: string;
   url: string;
 }
-
-export type PlanetsResponse = PaginatedResponse<Planet>
+export interface PlanetWithFilmsData extends Planet {
+  filmsData: Film[];
+}
+export type PlanetsResponse = PaginatedResponse<Planet>;

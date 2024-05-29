@@ -17,24 +17,30 @@ describe("getReptilePlanets", () => {
       name: "planet1",
       films: [],
       residents: ["resident2"],
+      filmsData: [],
     };
     // Mock planet with films but no reptile resident
     const mockPlanet2 = {
       name: "planet2",
       films: ["film1"],
       residents: ["resident1"],
+      filmsData: [],
     };
     // Mock planet with films and reptile resident
     const mockPlanet3 = {
       name: "planet3",
       films: ["film2"],
       residents: ["resident2"],
+      filmsData: [],
+
     };
     // Mock planet with films but no residents
     const mockPlanet4 = {
       name: "planet4",
       films: ["film3"],
       residents: [],
+      filmsData: [],
+
     };
     const mockPlanetsResponse = {
       results: [mockPlanet1, mockPlanet2, mockPlanet3, mockPlanet4],
@@ -57,7 +63,7 @@ describe("getReptilePlanets", () => {
 
     const mockSpecies2 = {
       name: "species2",
-      classification: "reptile",
+      classification: "artificial",
     } as Species;
 
     // Mocking fetchData calls based on URL

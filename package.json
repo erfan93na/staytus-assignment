@@ -5,11 +5,12 @@
     "@packages/*"
   ],
   "scripts": {
-    "build": "npm run build:state-manager && npm run build:starwars-utilities",
+    "build": "npm run build:state-manager && npm run build:starwars-utilities && npm run build:reptile-planets-example",
     "build:state-manager": "cd @packages/state-manager && npm run build",
-    "build:starwars-utilities": "cd @packages/starwars-utilities && npm run build"
-  },
-  "dependencies": {
-    "@packages/starwars-utilities": "^1.0.0"
+    "build:starwars-utilities": "cd @packages/starwars-utilities && npm run build",
+    "build:reptile-planets-example": "cd @packages/reptile-planets-example && npm run build",
+    "start": "npm run start:reptile-planets-example",
+    "start:reptile-planets-example": "cd @packages/reptile-planets-example && npm start"
+
   }
 }

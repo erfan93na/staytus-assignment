@@ -1,16 +1,13 @@
 {
-  "name": "@packages/state-manager",
+  "name": "reptile-planets-example",
   "version": "1.0.0",
-  "description": "Simple state-manager written in TypeScript",
-  "source": "src/index.ts",
-  "main": "dist/main.js",
-  "module": "dist/module.js",
+  "description": "Example using startwars-utilities and state-manager",
+  "source": "src/index.html",
   "scripts": {
-    "watch": "parcel watch",
-    "build": "parcel build --no-cache",
+    "start": "parcel --no-cache",
+    "build": "npx tailwindcss -i ./src/input.css -o ./src/output.css && parcel build --public-url ./ --no-cache",
     "test": "jest"
   },
-  "types": "dist/types.d.ts",
   "author": "erfan naghashlou",
   "license": "ISC",
   "devDependencies": {
@@ -22,5 +19,8 @@
     "ts-jest": "^29.1.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@packages/state-manager": "^1.0.0"
   }
 }

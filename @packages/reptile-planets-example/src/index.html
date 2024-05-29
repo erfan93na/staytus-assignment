@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars Planets</title>
+    <link href="./output.css" rel="stylesheet" />
+    <script defer type="module" src="main.ts"></script>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <div id="loading">
+      <div class="flex items-center my-4 justify-center space-x-2 w-full">
+        <div
+          class="w-8 h-8 border-4 border-blue-400 border-dashed rounded-full animate-spin"
+        ></div>
+        <span class="text-blue-500">Loading...</span>
+      </div>
+    </div>
+
+    <div
+      id="error"
+      class="bg-red-100 border border-red-400 m-4 text-red-700 px-4 py-3 rounded relative"
+      role="alert"
+    ></div>
+    <div id="planet-container" class="p-4 space-y-4"></div>
+  </body>
+</html>

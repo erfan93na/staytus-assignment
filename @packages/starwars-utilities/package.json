@@ -8,7 +8,7 @@
   "types": "dist/types.d.ts",
   "scripts": {
     "watch": "parcel watch",
-    "build": "parcel build",
+    "build": "parcel build --no-cache",
     "test": "jest"
   },
   "author": "erfan naghashlou",
